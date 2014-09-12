@@ -5,25 +5,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:weightSum="1">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView3" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView4" />
 
-        <ImageView
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView5" />
+            android:layout_height="match_parent"
+            android:text="Item"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.27" />
+
+
+
+        <Button
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:text="Code"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Calender"
+            android:id="@+id/button3"
+            android:layout_weight="0.14" />
     </LinearLayout>
 
     <HorizontalScrollView
@@ -54,9 +65,31 @@
     </HorizontalScrollView>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"></LinearLayout>
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:text="OK"
+            android:id="@+id/button4"
+            android:layout_weight="0.17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/title"
+            android:layout_weight="0.41" />
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/camera" />
+    </LinearLayout>
 
 </LinearLayout>
