@@ -91,5 +91,7 @@
             android:id="@+id/imageView7"
             android:src="@drawable/camera" />
     </LinearLayout>
-
+        android:layout_weight="1">
+        
+        </LinearLayout>
 </LinearLayout>
