@@ -37,28 +37,60 @@
             android:layout_weight="0.14" />
     </LinearLayout>
 
+
     <HorizontalScrollView
-        android:id="@+id/HorizontalScrollView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:id="@+id/horizontalScrollView1"
         android:layout_weight="2">
+
         <LinearLayout
             android:id="@+id/LinearLayout1"
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <!--&lt;!&ndash; 追加したいView &ndash;&gt;-->
-            <!--………-->
-            <!--……-->
-            <!--………-->
+            android:layout_height="wrap_content"
+            android:src="@drawable/ok">
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+
+
         </LinearLayout>
+
     </HorizontalScrollView>
-
-        <!--<ImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/imageView" />-->
-
 
 
     <HorizontalScrollView
@@ -71,7 +103,8 @@
             android:id="@+id/LinearLayout2"
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:src="@drawable/ok">
             <!--&lt;!&ndash; 追加したいView &ndash;&gt;-->
             <!--………-->
             <!--……-->
@@ -107,6 +140,4 @@
             android:id="@+id/imageView7"
             android:src="@drawable/camera" />
     </LinearLayout>
-        android:layout_weight="1">
-        
-        </LinearLayout>
+</LinearLayout>
