@@ -56,4 +56,8 @@ public class MyActivity extends Activity {
 
     }
 
+    public void Ok(View v){
+        setContentView(R.layout.activity_ok);
+    }
+
 }
