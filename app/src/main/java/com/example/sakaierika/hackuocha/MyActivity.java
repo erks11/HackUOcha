@@ -9,16 +9,40 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 
 public class MyActivity extends Activity {
 
     static final int REQUEST_CAPTURE_IMAGE = 100;
 
+    HorizontalScrollView scrollView;
+    LinearLayout linearLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        HorizontalScrollView scrollView = (HorizontalScrollView)findViewById(R.id.HorizontalScrollView1);
+
+        LinearLayout linearLayout = (LinearLayout)findViewById(R.id.LinearLayout1);
+        // ScrollView に LinearLayout を追加
+
+
+        //追加したいView
+        //LinearLayoutにviewを追加する
+
+        //linearLayout.addView(v);
+
+        scrollView.removeAllViews();
+        scrollView.addView(linearLayout);
+
+
+
+
     }
 
 
@@ -54,6 +78,10 @@ public class MyActivity extends Activity {
         //アクティビティを閉じる
         finish();
 
+    }
+
+    public void Ok(View v){
+        setContentView(R.layout.activity_ok);
     }
 
 }
