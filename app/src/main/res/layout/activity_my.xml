@@ -1,8 +1,10 @@
 <LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
 
     <LinearLayout
         android:orientation="horizontal"
@@ -139,18 +141,13 @@
 
 
         </LinearLayout>
-=======
-        android:id="@+id/horizontalScrollView"
-        android:layout_weight="5">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView" />
     </HorizontalScrollView>
->>>>>>> f61a5fa91ec21e8086329814b225c9b1b049ab52
 
-    </HorizontalScrollView>
 
 
     <HorizontalScrollView
@@ -158,7 +155,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/horizontalScrollView2"
         android:layout_weight="2" >
-        android:layout_weight="5" >
 
         <LinearLayout
             android:id="@+id/LinearLayout2"
