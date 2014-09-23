@@ -179,7 +179,8 @@
                 android:src="@drawable/girl2"
                 android:scaleType="fitXY"
                 android:background="#ffff1234"
-                android:baselineAlignBottom="true" />
+                android:baselineAlignBottom="true"
+                android:onClick="Ok" />
 
             <Button
                 android:layout_width="100dp"
