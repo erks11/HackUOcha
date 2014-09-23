@@ -88,8 +88,58 @@
 
     </LinearLayout>
 
+
     <HorizontalScrollView
         android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView1"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ok">
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+            <ImageView
+                android:layout_width="138dp"
+                android:layout_height="80dp"
+                android:src="@drawable/camera" />
+
+
+        </LinearLayout>
+=======
         android:id="@+id/horizontalScrollView"
         android:layout_weight="5">
 
@@ -98,15 +148,29 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView" />
     </HorizontalScrollView>
+>>>>>>> f61a5fa91ec21e8086329814b225c9b1b049ab52
 
+    </HorizontalScrollView>
 
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/horizontalScrollView2"
+        android:layout_weight="2" >
         android:layout_weight="5" >
 
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ok">
+            <!--&lt;!&ndash; 追加したいView &ndash;&gt;-->
+            <!--………-->
+            <!--……-->
+            <!--………-->
+        </LinearLayout>
     </HorizontalScrollView>
 
     <LinearLayout
@@ -158,5 +222,4 @@
             android:background="#ffff1234"
             android:adjustViewBounds="false" />
     </LinearLayout>
-
 </LinearLayout>

@@ -3,48 +3,39 @@ package com.example.sakaierika.hackuocha;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Debug;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ScrollView;
+
+import java.io.InputStream;
+import java.util.ArrayList;
 
 
 public class MyActivity extends Activity {
 
     static final int REQUEST_CAPTURE_IMAGE = 100;
+    private static final int REQUEST_GALLERY = 0;
 
-    HorizontalScrollView scrollView;
-    LinearLayout linearLayout;
+    HorizontalScrollView scrollView1;
+    LinearLayout linearLayout1;
+    ImageView imgView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
-        HorizontalScrollView scrollView = (HorizontalScrollView)findViewById(R.id.HorizontalScrollView1);
-
-        LinearLayout linearLayout = (LinearLayout)findViewById(R.id.LinearLayout1);
-        // ScrollView に LinearLayout を追加
-
-
-        //追加したいView
-        //LinearLayoutにviewを追加する
-
-        //linearLayout.addView(v);
-
-        scrollView.removeAllViews();
-        scrollView.addView(linearLayout);
-
-
-
-
+        LinearLayout linearLayout1 = (LinearLayout)
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -64,6 +55,8 @@ public class MyActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
     public void Camera(View v){
         Log.v("tag", "camera");
