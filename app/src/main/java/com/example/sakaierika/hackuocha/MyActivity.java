@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Debug;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -73,8 +75,15 @@ public class MyActivity extends Activity {
 
     }
 
-    public void Ok(View v){
-        setContentView(R.layout.activity_ok);
+    public void Ok(View v){ setContentView(R.layout.activity_ok);   }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode != KeyEvent.KEYCODE_BACK){
+            return super.onKeyDown(keyCode, event);
+            }else{
+            setContentView(R.layout.activity_my);
+            return false;
+            }
     }
 
 }
