@@ -95,8 +95,8 @@ public class AsyncHttpRequest extends AsyncTask<String, Void, String> {
 
             //JSONオブジェクト型から、文字列に変換
             String sKekka = topsobject.get("01").toString();
-            this.loadInBackground(sKekka);
-              oBmp = loadInBackground(sKekka);
+            //this.loadInBackground(sKekka);
+              //oBmp = loadInBackground(sKekka);
                 //ビットマップをImageViewに設定
 
             Handler handler= new Handler();

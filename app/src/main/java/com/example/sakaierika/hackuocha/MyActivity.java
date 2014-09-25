@@ -55,8 +55,8 @@ public class MyActivity extends Activity {
         String url = "http://oglsv.ogl.is.ocha.ac.jp/hackYou/index.php";
 
         AsyncHttpRequest task = new AsyncHttpRequest(this);
-        task.owner = this;
-        task.execute(url);
+       // task.owner = this;
+        //task.execute(url);
 
 //
 //        String topsurl = "https:\\/\\/farm4.staticflickr.com\\/3923\\/15018622468_bc292bd6c8.jpg";
